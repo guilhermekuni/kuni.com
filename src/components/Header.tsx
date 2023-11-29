@@ -1,3 +1,5 @@
+import { ThemeSwitcher } from "@/components/ThemeSwitcher";
+
 const Nav = ({
   href,
   children,
@@ -14,11 +16,12 @@ export const Header = () => {
     <div className="navbar bg-base-100 flex flex-row justify-center">
       <main className="flex flex-1 justify-between max-w-2xl">
         <section className="flex">
-          <Nav href="/">@kuni</Nav>
+          <Nav href="/">kuni</Nav>
         </section>
-        <section>
+        <section className="flex items-center">
           <Nav href="/about">about</Nav>
           <Nav href="/blog">blog</Nav>
+          <ThemeSwitcher />
         </section>
       </main>
     </div>
