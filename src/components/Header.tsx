@@ -16,7 +16,7 @@ export const Header = () => {
     <div className="navbar bg-base-100 flex flex-row justify-center">
       <main className="flex flex-1 justify-between max-w-2xl">
         <section className="flex">
-          <Nav href="/">kuni</Nav>
+          <Nav href="/">home</Nav>
         </section>
         <section className="flex items-center">
           <Nav href="/about">about</Nav>
