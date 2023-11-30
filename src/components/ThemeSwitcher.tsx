@@ -1,6 +1,6 @@
 export const ThemeSwitcher = () => (
-  <label className="swap swap-rotate ml-4">
-    <input type="checkbox" className="theme-controller" value="synthwave" />
+  <label className="swap swap-rotate ml-4 btn btn-ghost ">
+    <input type="checkbox" className="theme-controller" value="light" />
     <svg
       className="swap-on fill-current w-7 h-7"
       xmlns="http://www.w3.org/2000/svg"

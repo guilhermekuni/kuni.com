@@ -1,29 +1,19 @@
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
-
-const Nav = ({
-  href,
-  children,
-}: {
-  href: string;
-} & React.PropsWithChildren) => (
-  <a href={href} className="btn btn-ghost text-xl">
-    {children}
-  </a>
-);
+import { NavLink } from "@/components/NavLink";
 
 export const Header = () => {
   return (
-    <div className="navbar bg-base-100 flex flex-row justify-center">
-      <main className="flex flex-1 justify-between max-w-2xl">
+    <div className="navbar flex flex-row justify-center bg-base-300 text-base-content">
+      <div className="flex flex-1 justify-between max-w-2xl">
         <section className="flex">
-          <Nav href="/">home</Nav>
+          <NavLink href="/">home</NavLink>
         </section>
         <section className="flex items-center">
-          <Nav href="/about">about</Nav>
-          <Nav href="/blog">blog</Nav>
+          <NavLink href="/about">about</NavLink>
+          <NavLink href="/blog">blog</NavLink>
           <ThemeSwitcher />
         </section>
-      </main>
+      </div>
     </div>
   );
 };
